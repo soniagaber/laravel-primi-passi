@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $links =['Home',
+    'I nostri prodotti',
+    'Le novità',
+    'Trova un ristorante'];
+
+    return view('home', compact('links'));
 });

@@ -7,6 +7,13 @@
     <title>Laravel primi passi</title>
 </head>
 <body>
+    <ul>
+        @foreach ($links as $link)
+            <li><a href="#">{{$link}}</a></li>
+        @endforeach
+    </ul>
+    
     Hello World
+
 </body>
 </html>
